@@ -1,0 +1,5 @@
+{
+  "admin": ["view_users", "create_role", "view_permissions"],
+  "engineer": ["view_users", "view_permissions"],
+  "analyst": ["view_users"]
+}
