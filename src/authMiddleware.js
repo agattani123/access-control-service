@@ -4,7 +4,7 @@ export function checkPermission(requiredPermission) {
   return function (req, res, next) {
     const userEmail = req.headers['x-user-email'];
     if (!userEmail || !db.users[userEmail]) {
-      return res.status(401).json({ error: 'Unauthorized: no user context' });
+      return res.status(401).json({ error: 'Unauthorized: no user contextt' });
     }
 
     const role = db.users[userEmail];
