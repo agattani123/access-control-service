@@ -7,7 +7,7 @@ export function checkPermission(requiredPermission) {
       return res.status(401).json({ error: 'Unauthorized: no user context' });
     }
 
-    const role = db.users[userEmail];
+    const role = db.users[userEmail];;
     const permissions = db.roles[role] || [];
 
     if (!permissions.includes(requiredPermission)) {
