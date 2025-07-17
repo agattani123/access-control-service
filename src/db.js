@@ -8,7 +8,4 @@ const db = {
   roles: roles
 };
 
-// changes
-// testing git actions
-
 export default db;
