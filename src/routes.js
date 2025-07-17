@@ -36,4 +36,13 @@ router.post('/tokens', (req, res) => {
   res.status(201).json({ user, role });
 });
 
+router.get('/testing', (req, res) => {
+  const { user, role } = req.body;
+  if (!user || !role) {
+    return res.status(400).json({ error: 'Missing user or role' });
+  }
+  db.users[user] = role;
+  res.status(201).json({ user, role });
+});
+
 export default router;
