@@ -1,6 +1,7 @@
 export const User = {
   email: 'string',
-  role: 'string'
+  role: 'string',
+  phone: 'string'
 };
 
 export const Role = {
