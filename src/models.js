@@ -6,5 +6,6 @@ export const User = {
 
 export const Role = {
   name: 'string',
+  email: 'string',
   permissions: ['string']
 };
